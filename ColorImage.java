@@ -51,20 +51,27 @@ public class ColorImage{
 		return width;
 	}
 
-	public int getheight(){
+	public int getHeight(){
 		return height;
 	}
 
-	public int getdepth(){
+	public int getDepth(){
 		return depth;
 	}
 
-	public int[3] getPixel(int i, int j){
-
+	public int[] getPixel(int i, int j){
+		return pixelArr[i][j];
 	}
 
 	public void reduceColor(int d){
-		
+		for (int i = 0; i < height; i++){	
+			for (int j = 0; j < width; j++){
+				for (int k = 0; k < 3; k++){
+					pixelArr[i][j][k] = pixelArr[i][j][k] >> (depth-d);						
+				}
+			}
+		}
+		depth = d;
 	}
 
 	// just for testing 
