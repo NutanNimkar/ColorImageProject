@@ -2,7 +2,7 @@
 *
 * CSI 2120 Project
 * Class for Color Histogram 
-* @author Mohammed Shakir 
+* @author Mohammed Shakir - 300100792
 *
 */
 import java.io.*;
@@ -76,7 +76,6 @@ public class ColorHistogram{
 	}
 
 	public void save(String filename){
-
 		try{
 			FileWriter output = new FileWriter(new File(filename));
 			output.write(hist.length + "\n");
@@ -89,28 +88,4 @@ public class ColorHistogram{
 			System.out.println("Error! File Could not be created.");
 		}
 	}
-
-	public static void main(String[] args) {
-
-		ColorHistogram h = new ColorHistogram("25.jpg.txt");
-		ColorHistogram h1 = new ColorHistogram(8); 
-
-		ColorImage c = new ColorImage("q00.ppm");
-
-		//System.out.println(h.compare(h1));
-	
-		//for (int i = 0; i < arr.length; i++) {
-		//System.out.print(arr[0] + " ");
-		//}
-
-		//System.out.print(h.compare(h1));
-
-		h1.setImage(c);
-
-
-
-		double[] arr;
-		//h1.getHistogram();		
-	}
-
 }
