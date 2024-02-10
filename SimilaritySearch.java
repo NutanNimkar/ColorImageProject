@@ -19,6 +19,7 @@ public class SimilaritySearch {
         String datasetDir = args[2];
 
         ColorImage colorImage = new ColorImage(imageFileName);
+        colorImage.reduceColor(3);
         int d = colorImage.getDepth();
         ColorHistogram colorHistogram = new ColorHistogram(d);
         colorHistogram.setImage(colorImage);
