@@ -1,10 +1,12 @@
 /**
 *
 * CSI 2120 Project
-* Class for Color Histogram 
-* @author Mohammed Shakir 
+* Class for Color Image 
+* @author Mohammed Shakir - 300100792
+*         Nutan Nimkar - 
 *
 */
+
 import java.io.*;
 import java.util.*;
 
@@ -94,7 +96,7 @@ public class ColorHistogram{
 		ColorImage c = new ColorImage("q00.ppm");
 		c.reduceColor(3);
 
-		ColorHistogram h = new ColorHistogram("25.jpg.txt");
+		ColorHistogram h = new ColorHistogram("imageDataset2_15_20/4219.jpg.txt");
 		ColorHistogram h1 = new ColorHistogram(c.getDepth()); 
 
 		h1.setImage(c);

@@ -2,9 +2,11 @@
 *
 * CSI 2120 Project
 * Class for Color Image 
-* @author Mohammed Shakir and Nutan Nimkar
+* @author Mohammed Shakir - 300100792
+* 		  Nutan Namkir - 
 *
 */
+
 import java.io.*;
 import java.util.*;
 
@@ -72,15 +74,5 @@ public class ColorImage{
 			}
 		}
 		depth = d;
-	}
-
-	// just for testing 
-	public static void main(String[] args) {
-		
-		ColorImage a = new ColorImage("q00.ppm");
-
-		for (int i = 0; i < a.pixelArr[0][0].length; i++){
-			System.out.println(a.pixelArr[0][1][i]);
-		}
 	}
 }
