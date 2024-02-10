@@ -3,7 +3,7 @@
 * CSI 2120 Project
 * Class for Color Image 
 * @author Mohammed Shakir - 300100792
-* 		  Nutan Namkir - 
+* 		  Nutan Namkir - 300127333
 *
 */
 
