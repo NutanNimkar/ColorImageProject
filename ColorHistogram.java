@@ -3,7 +3,7 @@
 * CSI 2120 Project
 * Class for Color Image 
 * @author Mohammed Shakir - 300100792
-*         Nutan Nimkar - 30012733
+*         Nutan Nimkar - 300127333
 *
 */
 
@@ -90,19 +90,4 @@ public class ColorHistogram{
 			System.out.println("Error! File Could not be created.");
 		}
 	}
-
-	public static void main(String[] args) {
-
-		ColorImage c = new ColorImage("q00.ppm");
-		c.reduceColor(3);
-
-		ColorHistogram h = new ColorHistogram("imageDataset2_15_20/4219.jpg.txt");
-		ColorHistogram h1 = new ColorHistogram(c.getDepth()); 
-
-		h1.setImage(c);
-		h1.save("test1.txt");
-
-		System.out.println(h.compare(h1)); // higher number -> more similar		
-	}
-
 }
